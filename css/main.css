@@ -42,7 +42,7 @@
 	clear: both;
   width: 70%;
   height: 60%;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(252,246,220,0.6);
   position: relative;
 	top: 14.5%;
 	left: 15%;
@@ -104,7 +104,7 @@
 	font-family: "Berylium";
 	color: #5C3221;
 	text-shadow: 2px 2px 4px #ddd;
-	background-color: rgba(179,167,129,0.6);
+	background-color: rgba(179,167,129,1);
 	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.39), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -113,6 +113,8 @@
   letter-spacing: 3px;
 }
 
+.mainDisplay{
+}
 .countryImg{
 	height: 95%;
 	width: 87%;
