@@ -40,12 +40,12 @@
 
 #game_container{
 	clear: both;
-  width: 70%;
-  height: 60%;
+  width: 60%;
+  height: 50%;
   background-color: rgba(252,246,220,0.6);
   position: relative;
 	top: 14.5%;
-	left: 15%;
+	left: 20%;
   box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.39), 0 7px 10px 0 rgba(0, 0, 0, 0.21);
 }
 
@@ -71,10 +71,10 @@
 	float: left;
 	padding: 10px;
 	position: relative;
-	height: 80%;
+	height: 77%;
 	width: 25%;
 	display: inline-block;
-	margin: 0.5% 1.1%;
+	margin: 0.5% 1%;
 	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.39), 0 10px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
@@ -111,10 +111,9 @@
 .infoBox h1{
 	text-decoration: underline;
   letter-spacing: 3px;
+  font-size: 1.5em;
 }
 
-.mainDisplay{
-}
 .countryImg{
 	height: 95%;
 	width: 87%;
@@ -205,16 +204,17 @@
   cursor: pointer;
 }
 
-#answerSection{
-	height: 23%;
-	width: 96%;
+#factSection{
+  left: 5%;
+	height: 33%;
+	width: 86%;
 	bottom: 0;
-	margin: 0.5% 2%;
+	margin: 0 2%;
 	position: absolute;
 	text-align: center;
 }
 
-.answerBlock{
+.factBlock{
 	height: 80%;
 	width: 22%;
 	padding: 1%;
