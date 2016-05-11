@@ -13,8 +13,14 @@
 	<header id="page_title">Country Facts Quiz</header>
 		<div id="container_main">
 
-			<section id="game_container">
-				<header id="country_title">Germany</header>
+		<section id="game_container">
+    <section id="title_section">
+      <div class="flag"></div>
+      <header class="country_title">Ready?</header>
+    </section>
+
+
+
 
 			<section id="grid">
 				<div class="content_grid infoDisplay">
@@ -30,16 +36,16 @@
 
 				<div class="content_grid mainDisplay">
 					<section class="column">
-						<img class="countryImg" src="images/silo/germany.png" alt="Country">
-						<!-- <footer class="moreInfo">More Info</footer> -->
+						<div class="countryImg"></div>
+						<footer class="moreInfo">More Info</footer>
 					</section>
 				</div>
 
 
 				<div class="content_grid scoreDisplay">
 					<section class="column">
-						<div class="score">Score: 20pts</div>
-						<div class="answerFeedback">You're Right!</div>
+						<div id="score">Score: 0/100</div>
+						<div id="answerFeedback">Click Play</div>
 
 						<div class="questionCount">
 							<div class="one question">1</div>
@@ -48,7 +54,8 @@
 							<div class="four question">4</div>
 							<div class="five question">5</div>
 						</div>
-						<button class="submitBtn">Submit</button>
+            <button class="playBtn">PLAY</button>
+						<button class="submitBtn">SUBMIT</button>
 					</section>
 				</div>
 			</section>
@@ -69,8 +76,8 @@
 
 	<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script src="js/actions.js"></script>
-  <script src="js/questionFiller.js"></script>
+	<script type="text/javascript" src="js/actions.js"></script>
+  <script type="text/javascript" src="js/questionFiller.js"></script>
 
 
 </body>
