@@ -65,13 +65,13 @@
 }
 
 .flag img{
-  height: 45px;
+  height: 43px;
   width: 65px;
 }
 
 .country_title{
   display: inline-flex;
-  width: 20%;
+  width: auto;
 	color: #7C8540;
 	font-family: "Splandor";
 	font-size: 4em;
@@ -137,20 +137,25 @@
 }
 
 .countryImg{
-	height: 95%;
-	width: 87%;
 	padding: 1.5%;
 	position: relative;
 }
 
+.countryImg img{
+  height: 55%;
+  width: 65%;
+}
+
 .moreInfo{
-	height: 25%;
+	height: 30%;
 	width: 96%;
 	bottom: 0;
+  text-align: justify;
 	border-radius: 7px;
 	position: absolute;
 	font-family: "Berylium";
-	font-size: 1.4em;
+	font-size: 1.3em;
+  list-style: none;
 	text-shadow: 1px 2px 1px #666;
 	padding: 2%;
 	background-color: rgba(255,255,255,0.8);
@@ -257,7 +262,40 @@
   background-image: -o-linear-gradient(top, #32b384, #0c7a50);
   background-image: linear-gradient(to bottom, #32b384, #0c7a50);
   text-decoration: none;
+  cursor: pointer;
+}
 
+.nextBtn {
+	bottom: 0;
+	right: 20%;
+	position: absolute;
+  background: #34d97b;
+  background-image: -webkit-linear-gradient(top, #34d97b, #148c60);
+  background-image: -moz-linear-gradient(top, #34d97b, #148c60);
+  background-image: -ms-linear-gradient(top, #34d97b, #148c60);
+  background-image: -o-linear-gradient(top, #34d97b, #148c60);
+  background-image: linear-gradient(to bottom, #34d97b, #148c60);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 2px 1px 2px #666666;
+  font-family: "Berylium";
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 48.5px 10px 48.5px;
+  text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+.nextBtn:hover {
+	background: #32b384;
+  background-image: -webkit-linear-gradient(top, #32b384, #0c7a50);
+  background-image: -moz-linear-gradient(top, #32b384, #0c7a50);
+  background-image: -ms-linear-gradient(top, #32b384, #0c7a50);
+  background-image: -o-linear-gradient(top, #32b384, #0c7a50);
+  background-image: linear-gradient(to bottom, #32b384, #0c7a50);
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -283,9 +321,17 @@
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.39), 0 7px 10px 0 rgba(0, 0, 0, 0.31);
 	text-align: justify;
 	color: #fff;
-	font-size: 1.5em;
+	font-size: 2em;
 	font-family: "Berylium";
 	word-wrap: break-word;
 	text-shadow: 1px 2px 1px #000;
 	overflow-y: auto;
+  cursor: pointer;
+}
+
+.factSelection{
+  outline-style: inset;
+  outline-width: thick;
+  background-color: rgba(42,162,245,0.8);
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 1), 0 7px 16px 0 rgba(0, 0, 0, 1);
 }
