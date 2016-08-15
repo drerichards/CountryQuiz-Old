@@ -1,87 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 	<title>Country Quiz</title>
 </head>
 
 <body>
-	<div id="background_wood">
-	<header id="page_title">Country Facts Quiz</header>
-		<div id="container_main">
+	<div class="wood_container">
+		<header id="page_title">Country Facts Quiz</header>
 
-		<section id="game_container">
-    <section id="title_section">
-      <div class="flag"></div>
-      <header class="country_title">Ready?</header>
-    </section>
-
-
-			<section id="grid">
-				<div class="content_grid infoDisplay">
-					<section class="column">
+		<div class="map_container">
+			<div class="game_container">
+				<article class="country_column">
+					<header class="country_title">Ready?</header>
+					<div class="flag"></div>
+					<div id="alertBar"></div>
+					<div class="countryImg"></div>
+					<ul class="moreInfo"></ul>
+				</article>
+				<nav class="info_column">
+					<div class="infoBox">
 						<div class="legend_icon"><img src="images/icon/legend_icon.png" alt="Legend Icon"></div>
-						<div class="infoBox">
-							<h1>Instructions</h1>
-						</div>
-					</section>
-				</div>
+						<h1>Instructions</h1>
+						<p>Test your knowledge of the world by choosing from the four answers below.
+							<br>
+							<br>To score, select the <strong>TWO facts</strong> about the country displayed.
+							<br>
+							<br> Choose wisely and <strong>Win!</strong></p>
+					</div>
+				</nav>
+				<aside class="score_column">
+					<div id="scoreText">/100</div>
+					<div id="scoreNumber">0</div>
+					<div id="scoreText">Score: &nbsp;</div>
+					<div id="answerFeedback">Click Play</div>
+
+					<div class="questionCount">
+						<div class="questionOne question"></div>
+						<div class="questionTwo question"></div>
+						<div class="questionThree question"></div>
+						<div class="questionFour question"></div>
+						<div class="questionFive question"></div>
+					</div>
+
+					<div class="questionMarker">
+						<div class="markerOne marker"></div>
+						<div class="markerTwo marker"></div>
+						<div class="markerThree marker"></div>
+						<div class="markerFour marker"></div>
+						<div class="markerFive marker"></div>
+					</div>
 
 
-				<div class="content_grid mainDisplay">
-					<section class="column">
-						<div class="countryImg"></div>
-						<ul class="moreInfo"></ul>
-					</section>
-				</div>
 
-
-				<div class="content_grid scoreDisplay">
-					<section class="column">
-						<div id="scoreText">/100</div><div id="scoreNumber">0</div><div id="scoreText">Score: &nbsp;</div>
-						<div id="answerFeedback">Click Play</div>
-
-						<div class="questionCount">
-							<div class="questionOne question"></div>
-							<div class="questionTwo question"></div>
-							<div class="questionThree question"></div>
-							<div class="questionFour question"></div>
-							<div class="questionFive question"></div>
-						</div>
-
-            <div class="questionMarker">
-              <div class="markerOne marker"></div>
-              <div class="markerTwo marker"></div>
-              <div class="markerThree marker"></div>
-              <div class="markerFour marker"></div>
-              <div class="markerFive marker"></div>
-           </div>
-
-            <button class="playBtn">PLAY</button>
-						<button class="submitBtn">SUBMIT</button>
-            <button class="nextBtn">NEXT >></button>
-
-					</section>
-				</div>
-			</section>
-			</section>
-			<section id="factSection">
-				<div class="factBlock factAlpha"><img src="images/icon/wheel_icon.png" align="left"></div>
-				<div class="factBlock factBeta"><img src="images/icon/wheel_icon.png" align="left"></div>
-				<div class="factBlock factCharlie"><img src="images/icon/wheel_icon.png" align="left"></div>
-				<div class="factBlock factDelta"><img src="images/icon/wheel_icon.png" align="left"></div>
-			</section>
+					<button class="playBtn">PLAY</button>
+					<button class="submitBtn">SUBMIT</button>
+					<button class="nextBtn">NEXT>></button>
+				</aside>
+			</div>
 		</div>
 
+		<footer>
+			<div class="factBlock factAlpha"></div>
+			<div class="factBlock factBeta"></div>
+			<div class="factBlock factCharlie"></div>
+			<div class="factBlock factDelta"></div>
+		</footer>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
 	<script type="text/javascript" src="js/actions.js"></script>
-  <script type="text/javascript" src="js/questionFiller.js"></script>
+	<script type="text/javascript" src="js/questionFiller.js"></script>
 
 
 </body>
